@@ -1,0 +1,16 @@
+{
+  "generatedBy": "Microsoft.NET.Sdk.Functions.Generator-4.1.1",
+  "configurationSource": "attributes",
+  "bindings": [
+    {
+      "type": "blobTrigger",
+      "connection": "AzureWebJobsStorage",
+      "path": "filestorage/{name}",
+      "source": "logsAndContainerScan",
+      "name": "myBlob"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "../bin/Azure.Blob.Trigger.Function.dll",
+  "entryPoint": "Azure.Blob.Trigger.Function.Function1.Run"
+}
